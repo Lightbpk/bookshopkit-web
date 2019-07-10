@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookshop</title>
+</head>
+<body>
+
+<div id = "booklist">
+    <h3 id = "b1name"></h3>
+    <img id = "FirstBookIMG">
+    <h3 id = "b2name"></h3>
+    <img id = "SecondBookIMG">
+    <h3 id = "b3name"></h3>
+    <img id = "ThirdBookIMG">
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-storage.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCQHd-hORcj4NsZZWtHKCtOH3aeuUa2EEk",
+        authDomain: "bookshopkit.firebaseapp.com",
+        databaseURL: "https://bookshopkit.firebaseio.com",
+        projectId: "bookshopkit",
+        storageBucket: "bookshopkit.appspot.com",
+        messagingSenderId: "949954496127"
+    };
+    firebase.initializeApp(config);
+    console.log('Firebase Init');
+</script>
+
+<script src="initscr.js"></script>
+</body>
+</html>
